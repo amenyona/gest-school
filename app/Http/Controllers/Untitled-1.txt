@@ -1,0 +1,4 @@
+   $res = DB::table('anneeacademique_enseignant_matiere')->where([
+        ['enseignant_id','=', $idenseignant],
+        ['matiere_id', '=', $idmatiere]
+      ])->get();
